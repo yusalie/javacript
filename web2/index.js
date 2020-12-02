@@ -1,40 +1,25 @@
-function addition() {
-  x = document.getElementById('txt1').value;
-  y = document.getElementById('txt2').value;
-  w = +y + +x
-  document.getElementById('txt3').value = w;
+calcArray=[];
+
+function number(number){
+  let numBox = document.getElementById("txt4");
+  numBox.value += number;
 }
 
-function subtraction() {
-  x = document.getElementById('txt1').value;
-  y = document.getElementById('txt2').value;
-  w = +y - +x
-  document.getElementById('txt3').value = w;
+function op(operator){
+  let oper = document.getElementById("txt4");
+  num1 = parseInt(oper.value);
+  oper.value += operator;
+  opera = oper.value;
 }
 
-function division(){
-  x = document.getElementById('txt1').value;
-  y = document.getElementById('txt2').value;
-  w = +y / +x
-  document.getElementById('txt3').value = w;
+function calc(sum){
+  calcArray = document.getElementById("txt4").value;
+  x = ''
+  document.getElementById('txt4').value = x;
+  document.getElementById("txt4").value = eval(calcArray);
 }
 
-function multiplication(){
-  x = document.getElementById('txt1').value;
-  y = document.getElementById('txt2').value;
-  w = +y * +x
-  document.getElementById('txt3').value = w;
+function clr(){
+  new_txt = ''
+  document.getElementById('txt4').value =new_txt;
 }
-
-function calc(){
-  document.write("Hello world")
-}
-
-function swap() {
-  x = document.getElementById('txt1').value;
-  y = document.getElementById('txt2').value;
-  document.getElementById('txt3').value = Math.random();
-
-}
-
-console.log(Math.random());

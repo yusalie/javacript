@@ -12,3 +12,11 @@ for(let j of i){
     }
   }
 }
+let x = 0;
+for(x; x<10; x++){
+  console.log(x);
+}
+z = [5,66,99,28, 4,,81, 24]
+for(y in z){
+  console.log(y++);
+}

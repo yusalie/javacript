@@ -3,23 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="index.js" type="text/javascript">
-
-    </script>
+    <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
+    <div class="form">
     <form class="" action="yusuf.salie96@gmail.com" method="post">
-      <label for="txt1">Number:</label>
-      <input type="text" name="" value="" id="txt1"><br>
-      <label for="txt2">Number2:</label>
-      <input type="text" name="" value="" id="txt2"><br>
-      <label for="txt3">Answer:</label>
-      <input type="text" name="" value="" id="txt3"><br>
-      <button type="button" name="button" onclick="addition()">+</button>
-      <button type="button" name="button" onclick="subtraction()">-</button>
-      <button type="button" name="button" onclick="division()">/</button>
-      <button type="button" name="button" onclick="multiplication()">*</button>
-      <button type="button" name="button" onclick="swap()">Change</button>
+      <input type="text" name="" value="" id="txt4"><br>
+      <button type="button" name="button" class="number" onclick="number(7)">7</button>
+      <button type="button" name="button" class="number" onclick="number(8)">8</button>
+      <button type="button" name="button" class="number" onclick="number(9)">9</button>
+      <button type="button" name="button" class="operator" onclick="op('+')">+</button><br>
+      <button type="button" name="button" value="4" class="number" onclick="number(4)">4</button>
+      <button type="button" name="button" class="number" onclick="number(5)">5</button>
+      <button type="button" name="button" class="number" onclick="number(6)">6</button>
+      <button type="button" name="button" class="operator" onclick="op('-')">-</button>
+      <br>
+
+      <button type="button" value="1" name="button" class="number" onclick="number(1)">1</button>
+      <button type="button" value="2" name="button" class="number" onclick="number(2)">2</button>
+      <button type="button" value="3" name="button" class="number" onclick="number(3)">3</button>
+      <button type="button" name="button" class="operator" onclick="op('/')">/</button><br>
+      <button type="button" name="button" class="number" onclick="number(0)">0</button>
+      <button type="button" name="button" class="operator"  onclick="clr()">c</button>
+      <button type="button" name="button" class="operator" onclick="calc()">=</button>
+      <button type="button" name="button" class="operator" onclick="op('*')">*</button>
     </form>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
